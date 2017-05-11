@@ -3,10 +3,10 @@
     function setup() {
         availableLetters = "abcdefghijklmnopqrstuvwxyz";
         lives = 6;
-        words = ["coffee", "donut", "bacon", "icing"];
+        words = ["coffee", "donut", "bacon", "icing", "croissant", "sprinkles", "chocolate"];
         messages = {
-            win: 'You win!',
-            lose: 'Game over!',
+            win: 'YAY! You win! :)',
+            lose: 'Aw shucks! Game over! :/',
             guessed: ' already guessed, please try again...',
             validLetter: 'Please enter a letter from A-Z'
         };
@@ -15,7 +15,6 @@
         numLettersMatched = 0;
 
         currentWord = words[Math.floor(Math.random() * words.length)];
-
 
         output = document.getElementById("output");
         man = document.getElementById("man");
