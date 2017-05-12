@@ -11,21 +11,30 @@
             validLetter: 'Please enter a letter from A-Z'
         };
 
-        lettersGuessed = lettersMatched = '';
-        numLettersMatched = 0;
+      lettersGuessed = lettersMatched = "";
+      numLettersMatched = 0;
+      currentWord = words[Math.floor(Math.random() * words.length)];
 
-        currentWord = words[Math.floor(Math.random() * words.length)];
 
-        output = document.getElementById("output");
-        man = document.getElementById("man");
-        guessInput = document.getElementById("letter");
+      var output = $("#output");
+      // output = document.getElementById("output");
+      var man = $("#man")
+        // man = document.getElementById("man");
+      var letter = $("#guessInput")
+        // guessInput = document.getElementById("letter");
 
+
+        // man.html("You have ' + lives + ' lives remaining");
         man.innerHTML = 'You have ' + lives + ' lives remaining';
+        // output.html("");
         output.innerHTML = '';
-
+        // $("#letter").value = "";
         document.getElementById("letter").value = '';
 
-        guessButton = document.getElementById("guess");
+
+        var guessButton = $("#guess");
+        // guessButton = document.getElementById("guess");
+
         guessInput.style.display = 'inline';
         guessButton.style.display = 'inline';
 
